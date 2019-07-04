@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.MediaController;
 import android.widget.VideoView;
 
 import com.example.hellomedia.R;
@@ -45,6 +46,12 @@ public class VideoFragment extends Fragment {
         mVideoView.setVideoURI(uri);
 
         // Creamos el componente para poder manejar el video
+        MediaController mediaController = new MediaController(getActivity());
+        mediaController.setAnchorView(mVideoView);
+
+        // Asignamos el controlados de vídeo a nuestro vídeo
+        mVideoView.setMediaController(mediaController);
+        mediaController.setAnchorView(viewVideo);
 
         mVideoView.start();
 
