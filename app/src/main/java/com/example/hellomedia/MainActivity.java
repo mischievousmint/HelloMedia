@@ -17,7 +17,7 @@ import com.example.hellomedia.Fragments.RadioFragment;
 import com.example.hellomedia.Fragments.VideoFragment;
 import com.example.hellomedia.Fragments.VideoURLFragment;
 
-public class MainActivity extends AppCompatActivity implements VideoFragment.OnFragmentInteractionListener, MP3Fragment.OnFragmentInteractionListener,VideoURLFragment.OnFragmentInteractionListener,RadioFragment.OnFragmentInteractionListener {
+public class MainActivity extends AppCompatActivity implements  MP3Fragment.OnFragmentInteractionListener,VideoURLFragment.OnFragmentInteractionListener,RadioFragment.OnFragmentInteractionListener {
     private TextView mTextMessage;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener

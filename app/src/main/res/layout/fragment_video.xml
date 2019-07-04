@@ -6,13 +6,10 @@
     android:background="#40F1C1"
     tools:context=".Fragments.VideoFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <VideoView
+        android:id="@+id/vvVideo"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="VIDEO"
-        android:textColor="#FFFF"
-        android:textSize="40sp"/>
+        android:layout_height="400dp"
+        android:layout_gravity="center"/>
 
 </FrameLayout>
