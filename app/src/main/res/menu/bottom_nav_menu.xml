@@ -21,4 +21,10 @@
         android:icon="@drawable/ic_radio_black_24dp"
         android:title="Radio" />
 
+    <item
+        android:id="@+id/navGallery"
+        android:icon="@drawable/ic_image_black_24dp"
+        android:title="Gallery" />
+
+
 </menu>

@@ -44,8 +44,6 @@ public class MP3Fragment extends Fragment implements View.OnClickListener {
         btnPause.setOnClickListener((View.OnClickListener) this);
         btnStop.setOnClickListener((View.OnClickListener) this);
 
-        mPlayer.start();
-
         return viewMP3;
     }
 

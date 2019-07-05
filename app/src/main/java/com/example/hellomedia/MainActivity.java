@@ -12,12 +12,13 @@ import android.support.annotation.NonNull;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import com.example.hellomedia.Fragments.GalleryFragment;
 import com.example.hellomedia.Fragments.MP3Fragment;
 import com.example.hellomedia.Fragments.RadioFragment;
 import com.example.hellomedia.Fragments.VideoFragment;
 import com.example.hellomedia.Fragments.VideoURLFragment;
 
-public class MainActivity extends AppCompatActivity implements  MP3Fragment.OnFragmentInteractionListener,VideoURLFragment.OnFragmentInteractionListener,RadioFragment.OnFragmentInteractionListener {
+public class MainActivity extends AppCompatActivity implements  MP3Fragment.OnFragmentInteractionListener,VideoURLFragment.OnFragmentInteractionListener, RadioFragment.OnFragmentInteractionListener {
     private TextView mTextMessage;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -37,6 +38,9 @@ public class MainActivity extends AppCompatActivity implements  MP3Fragment.OnFr
                     return true;
                 case R.id.navRadio:
                     launchFragment(new RadioFragment());
+                    return true;
+                case R.id.navGallery:
+                    launchFragment(new GalleryFragment());
                     return true;
             }
             return false;
@@ -78,6 +82,11 @@ public class MainActivity extends AppCompatActivity implements  MP3Fragment.OnFr
 
     @Override
     public void onFragmentInteraction(Uri uri) {
+
+    }
+
+    @Override
+    public void setTitleToolbar(String title) {
 
     }
 }
